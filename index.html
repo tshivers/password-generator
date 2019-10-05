@@ -5,32 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Password Generator</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
   </head>
   <body>
     <header>
-      <h1>Password Generator</h1>
+      <div class="container"> 
+        <div class="row">
+          <div class="col-lg-8 col-sm-12 mx-auto">
+            <div class="content">
+              <h1>Password Generator</h1>
+              <br/>
+              <input type="text" id="generate">
+              <br/>
+              <input type="range" min="8" max="128" name="pwlenth1" id="pwlength">
+              <br/>
+              <h2>Generate a Password</h2>
+              <br/>
+              <div class="textarea">
+              <textarea readonlyid="password">Your Secure Password</textarea>
+              </div>
+              <!-- Continue in this section to make onclick function and to generate random password
+              ALSO, double-check code syntax-->
+              <button onclick="generate">Generate Password</button> 
+              <button onclick="copyPassword">Copy to Clipboard</button>
+            </div>
+          </div>
+         </div>
+      </div>
+      
     </header>
-    <h2>Generate a Password</h2>
-      
-    <form name="pgenerate">
-        <input type="text" name="output">
-        <input type="button" value="Generate Password" onClick="populateForm(this.form.thelength.value)">
-
-    </form>
+ 
+    <script src="script.js"></script>
     
-    <!-- MODIFY THIS PORTION TO REFLECT CORRECT SYNTAX.
-    <textarea
-      readonly
-      id="password"
-      placeholder="Your Secure Password"
-    ></textarea>
-    <button id="generate">Generate Password</button> 
-    <button id="copy">
-      Copy to Clipboard
-    </button>
-    -->
-
-      
-
-  </body>
+</body>
 </html>
+
