@@ -8,37 +8,32 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-
   </head>
+
   <body>
     <header>
-      <div class="container"> 
+      <div class="main"> 
         <div class="row">
           <div class="col-lg-8 col-sm-12 mx-auto">
             <div class="content">
               <h1>Password Generator</h1>
-              <br/>
-              <input type="text" id="generate">
-              <br/>
-              <input type="range" min="8" max="128" name="pwlenth1" id="pwlength">
-              <br/>
-              <h2>Generate a Password</h2>
-              <br/>
-              <div class="textarea">
-              <textarea readonlyid="password">Your Secure Password</textarea>
-              </div>
-              <!-- Continue in this section to make onclick function and to generate random password
-              ALSO, double-check code syntax-->
-              <button onclick="generate">Generate Password</button> 
-              <button onclick="copyPassword">Copy to Clipboard</button>
+                <br/>
+                  <div class="container">
+                    <h2>Generate a Password</h2>
+                <br/>
+                  <div class="textarea">
+                    <textarea readonlyid="password" style="width: 100%">Your Secure Password</textarea>
+                  </div>
+            <div id="buttons">
+              <button onclick="button" class="btn btn-danger"><generate">Generate Password</button> 
+              <button onclick="button" class="btn btn-secondary"></copyPassword">Copy to Clipboard</button>
             </div>
           </div>
          </div>
       </div>
-      
-    </header>
+  </header>
  
-    <script src="script.js"></script>
+  <script src="script.js"></script>
     
 </body>
 </html>
